@@ -1,4 +1,11 @@
-# Install-WP-TurnkeyLinux-LAMP
+# Overview
+These commands will do the following on a Turnkeylinux LAMP install
+
+- Download and unzip wordpress into the current directory
+- Create a database called **wordpress**
+- Create a database user called **WordpressDBUser** and set their database password to **myWorppresspassword**
+
+## Install-WP-TurnkeyLinux-LAMP
 Install Wordpress on TurnkeyLinux LAMP via the commandline
 
 ```bash
@@ -15,12 +22,8 @@ Install Wordpress on TurnkeyLinux LAMP via the commandline
   use wordpress;
   exit
 ```
-This will do the following
-- Download and unzip wordpress into the current directory
-- Create a database called **wordpress**
-- Create a database user called **WordpressDBUser** and set their database password to **myWorppresspassword**
 
-# Install-WP-CLI
+## Install-WP-CLI
 Install Wordpress CLI
 
 ```bash
