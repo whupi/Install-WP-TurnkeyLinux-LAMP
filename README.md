@@ -9,12 +9,16 @@ Install Wordpress on TurnkeyLinux LAMP via the commandline
   rm -f latest.tar.gz
   mysql -u root -p
   create database wordpress;
-  create user 'WordpressDBUser'@'localhost' identified by '4qasshole';
-  grant usage on *.* to WordpressDBUser@localhost identified by '4qasshole';
+  create user 'WordpressDBUser'@'localhost' identified by 'myWorppresspassword';
+  grant usage on *.* to WordpressDBUser@localhost identified by 'myWorppresspassword';
   grant all privileges on wordpress.* to WordpressDBUser@localhost;
   use wordpress;
   exit
 ```
+This will do the following
+- Download and unzip wordpress into the current directory
+- Create a database called **wordpress**
+- Create a database user called **WordpressDBUser** and set their database password to **myWorppresspassword**
 
 # Install-WP-CLI
 Install Wordpress CLI
